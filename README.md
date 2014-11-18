@@ -69,6 +69,7 @@ for mission-critical applications.
 ##Licensing
 
 This software product is available under the GNU General Public License
-(GPL). Terms of the GPL can be read at http://www.jstott.me.uk/gpl/.
-Any commercial use requires the purchase of a license - contact me at
-phpcoord@jstott.me.uk for details.
+(GPL) version 2. Terms of the GPL can be read in the accompanying
+LICENSE.txt file. Any commercial use requires the purchase of a license.
+Please contact the original developer at phpcoord@jstott.me.uk for details.
+You should explain that you are using this forked version.
