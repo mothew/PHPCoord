@@ -38,7 +38,7 @@
   //  - Renamed files to remove version number from file name
   //  - Renamed README to bring it in line with github norms
   //  - Renamed test.php to examples.php - and necessary edits for file names
-  //  - and titles
+  //    and titles
   //  - Included LICENSE.txt, the GPL v2.0
   //  - README edits and conversion to markdown
   //--------------------------------------------------------------------------

@@ -1,48 +1,4 @@
 <?php
-
-  //--------------------------------------------------------------------------
-  // PHPcoord
-  // phpcoord.php
-  //
-  // (c) 2005 Jonathan Stott
-  //
-  // Created on 11-Aug-2005
-  //
-  // 2.3 - 24 Aug 2006
-  //  - Changed OSRef->toSixFigureString() so that the eastings and northings
-  //    are rounded rather than floored.
-  // 2.2 - 11 Feb 2006
-  //  - Used different algorithm for calculating distance between latitudes
-  //    and longitudes - fixes a number of problems with distance calculations
-  // 2.1 - 22 Dec 2005
-  //  - Added getOSRefFromSixFigureReference function
-  // 2.0 - 21 Dec 2005
-  //  - Completely different object design - conversion functions now through
-  //    objects rather than static functions
-  //  - Updated comments and documentation
-  // 1.1 - 11 Sep 2005
-  //  - Added OSGB36/WGS84 data conversions^M
-  // 1.0 - 11 Aug 2005
-  //  - Initial version
-  //--------------------------------------------------------------------------
-
-  //--------------------------------------------------------------------------
-  // Fixes and additions
-  //
-  // (c) 2014 Matthew Shepherd
-  // 
-  // 2.4 - 18 Nov 2014
-  //  - For the 2 instances where floor() had been changed to round() in 2.3,
-  //    both have been changed back to floor(). This lead to half of all
-  //    inputs being converted wrongly.
-  //  - Renamed files to remove version number from file name
-  //  - Renamed README to bring it in line with github norms
-  //  - Renamed test.php to examples.php - and necessary edits for file names
-  //  - and titles
-  //  - Included LICENSE.txt, the GPL v2.0
-  //  - README edits and conversion to markdown
-  //--------------------------------------------------------------------------
-
   require_once("phpcoord.php");
 ?>
 
