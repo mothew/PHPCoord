@@ -1,7 +1,13 @@
 <?php
 
-  //--------------------------------------------------------------------------  // PHPcoord
-  // phpcoord.php  //  // (c) 2005 Jonathan Stott  //  // Created on 11-Aug-2005  //
+  //--------------------------------------------------------------------------
+  // PHPcoord
+  // phpcoord.php
+  //
+  // (c) 2005 Jonathan Stott
+  //
+  // Created on 11-Aug-2005
+  //
   // 2.3 - 24 Aug 2006
   //  - Changed OSRef->toSixFigureString() so that the eastings and northings
   //    are rounded rather than floored.
@@ -13,10 +19,23 @@
   // 2.0 - 21 Dec 2005
   //  - Completely different object design - conversion functions now through
   //    objects rather than static functions
-  //  - Updated comments and documentation  // 1.1 - 11 Sep 2005
+  //  - Updated comments and documentation
+  // 1.1 - 11 Sep 2005
   //  - Added OSGB36/WGS84 data conversions
-  // 1.0 - 11 Aug 2005  //  - Initial version  //--------------------------------------------------------------------------
+  // 1.0 - 11 Aug 2005
+  //  - Initial version
+  //--------------------------------------------------------------------------
 
+  //--------------------------------------------------------------------------
+  // Fixes and additions
+  //
+  // (c) 2014 Matthew Shepherd
+  // 
+  // 2.4 - 18 Nov 2014
+  //  - For the 2 instances where floor() had been changed to round() in 2.3,
+  //    both have been changed back to floor(). This lead to half of all
+  //    inputs being converted wrongly.
+  //--------------------------------------------------------------------------
 
   // ================================================================== LatLng
 
@@ -424,8 +443,8 @@
       if ($index >= 73) $index++;
       $secondLetter = chr($index);
 
-      $e = round(($this->easting - (100000 * $hundredkmE)) / 100);
-      $n = round(($this->northing - (100000 * $hundredkmN)) / 100);
+      $e = floor(($this->easting - (100000 * $hundredkmE)) / 100);
+      $n = floor(($this->northing - (100000 * $hundredkmN)) / 100);
 
       return sprintf("%s%s%03d%03d", $firstLetter, $secondLetter, $e, $n);
     }
