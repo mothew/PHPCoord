@@ -21,7 +21,7 @@
   //    objects rather than static functions
   //  - Updated comments and documentation
   // 1.1 - 11 Sep 2005
-  //  - Added OSGB36/WGS84 data conversions
+  //  - Added OSGB36/WGS84 data conversions^M
   // 1.0 - 11 Aug 2005
   //  - Initial version
   //--------------------------------------------------------------------------
@@ -37,9 +37,12 @@
   //    inputs being converted wrongly.
   //  - Renamed files to remove version number from file name
   //  - Renamed README to bring it in line with github norms
-  //  - Removed the test.php at least temporarily
-  //  - README edits
+  //  - Renamed test.php to examples.php - and necessary edits for file names
+  //  - and titles
+  //  - Included LICENSE.txt, the GPL v2.0
+  //  - README edits and conversion to markdown
   //--------------------------------------------------------------------------
+
 
   // ================================================================== LatLng
 

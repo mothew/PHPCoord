@@ -73,3 +73,7 @@ This software product is available under the GNU General Public License
 LICENSE.txt file. Any commercial use requires the purchase of a license.
 Please contact the original developer at phpcoord@jstott.me.uk for details.
 You should explain that you are using this forked version.
+
+##Examples
+
+Examples of usage are given in the accompanying examples.php file.
