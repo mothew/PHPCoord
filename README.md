@@ -7,31 +7,39 @@ Created on 11-Aug-2005
 ##Version history until version 2.3
  
 ###2.3 - 24 Aug 2006
+
 - Changed OSRef->toSixFigureString() so that the eastings and northings are rounded rather than floored.
+
 ###2.2 - 11 Feb 2006
+
 - Used different algorithm for calculating distance between latitudes and longitudes - fixes a number of problems with distance calculations
- 2.1 - 22 Dec 2005
-  - Added getOSRefFromSixFigureReference function
- 2.0 - 21 Dec 2005
-  - Completely different object design - conversion functions now through
-    objects rather than static functions
-  - Updated comments and documentation
- 1.1 - 11 Sep 2005
-  - Added WGS84/OSGB36 conversions
- 1.0 - 11 Aug 2005
-  - Initial version
---------------------------------------------------------------------------
 
---------------------------------------------------------------------------
- Edits and changes by Matthew Shepherd
+###2.1 - 22 Dec 2005
 
- Forked on 18-Nov-2014
+- Added getOSRefFromSixFigureReference function
 
- 2.4 - 18 Nov 2014
-  - Rolled back 2.3 edits that changed floor() to round(). This gave
-    inaccurate results if the 2nd from last digit in the northings or
-    eastings was 5 or greater.
---------------------------------------------------------------------------
+###2.0 - 21 Dec 2005
+
+- Completely different object design - conversion functions now through objects rather than static functions
+- Updated comments and documentation
+
+###1.1 - 11 Sep 2005
+
+- Added WGS84/OSGB36 conversions
+
+###1.0 - 11 Aug 2005
+
+- Initial version
+
+##Version history from 2.4
+
+Forked on 18-Nov-2014 by Matthew Shepherd
+
+###2.4 - 18 Nov 2014
+
+- Rolled back 2.3 edits that changed floor() to round(). This gave inaccurate results if the 2nd from last digit in the northings or eastings was 5 or greater.
+
+##Description
 
 PHPcoord is a PHP script that provides functions for handling various
 co-ordinate systems and converting between them. Currently, OSGB (Ordnance
@@ -49,8 +57,7 @@ then it isn't necessary to perform the conversions.
 Examples of how to use the functions provided in phpcoord.php can be
 found in the test.php script.
 
-
-DISCLAIMER
+##Disclaimer
 
 Accuracy of the co-ordinate conversions contained within the PHPcoord
 package is not guaranteed. Use of the conversions is entirely at your
@@ -59,7 +66,7 @@ errors created by the conversions. I do not recommend using the package
 for mission-critical applications.
 
 
-LICENSING
+##Licensing
 
 This software product is available under the GNU General Public License
 (GPL). Terms of the GPL can be read at http://www.jstott.me.uk/gpl/.
