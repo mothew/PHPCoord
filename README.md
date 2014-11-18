@@ -1,6 +1,11 @@
--------------------------------------------------------------------------- PHPcoord
- readme.txt 
- (c) 2005 Jonathan Stott  Created on 11-Aug-2005 
+--------------------------------------------------------------------------
+ PHPcoord
+ readme.txt
+ 
+ (c) 2005 Jonathan Stott
+ 
+ Created on 11-Aug-2005
+ 
  2.3 - 24 Aug 2006
   - Changed OSRef->toSixFigureString() so that the eastings and northings
     are rounded rather than floored.
@@ -14,7 +19,21 @@
     objects rather than static functions
   - Updated comments and documentation
  1.1 - 11 Sep 2005
-  - Added WGS84/OSGB36 conversions 1.0 - 11 Aug 2005  - Initial version--------------------------------------------------------------------------
+  - Added WGS84/OSGB36 conversions
+ 1.0 - 11 Aug 2005
+  - Initial version
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+ Edits and changes by Matthew Shepherd
+
+ Forked on 18-Nov-2014
+
+ 2.4 - 18 Nov 2014
+  - Rolled back 2.3 edits that changed floor() to round(). This gave
+    inaccurate results if the 2nd from last digit in the northings or
+    eastings was 5 or greater.
+--------------------------------------------------------------------------
 
 PHPcoord is a PHP script that provides functions for handling various
 co-ordinate systems and converting between them. Currently, OSGB (Ordnance
@@ -31,8 +50,6 @@ then it isn't necessary to perform the conversions.
 
 Examples of how to use the functions provided in phpcoord.php can be
 found in the test.php script.
-
-See http://www.jstott.me.uk/phpcoord/ for latest releases and information.
 
 
 DISCLAIMER

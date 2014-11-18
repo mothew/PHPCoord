@@ -35,6 +35,10 @@
   //  - For the 2 instances where floor() had been changed to round() in 2.3,
   //    both have been changed back to floor(). This lead to half of all
   //    inputs being converted wrongly.
+  //  - Renamed files to remove version number from file name
+  //  - Renamed README to bring it in line with github norms
+  //  - Removed the test.php at least temporarily
+  //  - README edits
   //--------------------------------------------------------------------------
 
   // ================================================================== LatLng
