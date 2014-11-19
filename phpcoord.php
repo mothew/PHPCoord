@@ -450,10 +450,11 @@
       if ($index >= 73) $index++;
       $secondLetter = chr($index);
 
-      $e = floor(($this->easting - (100000 * $hundredkmE)) / 100);
-      $n = floor(($this->northing - (100000 * $hundredkmN)) / 100);
 
-      return sprintf("%s%s%03d%03d", $firstLetter, $secondLetter, $e, $n);
+      $e = substr(sprintf("%06d", $this->easting), 1, 3);
+      $n = substr(sprintf("%06d", $this->northing), 1, 3);
+      
+      return $firstLetter . $secondLetter . $e . $n;
     }
 
 
