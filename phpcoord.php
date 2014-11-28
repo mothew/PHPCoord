@@ -424,7 +424,7 @@
      *
      * @return
      */
-    function toSixFigureString() {
+    function toOSNationalGridReferenceString($digits = 6) {
       $hundredkmE = floor($this->easting / 100000);
       $hundredkmN = floor($this->northing / 100000);
       $firstLetter = "";
@@ -451,8 +451,8 @@
       $secondLetter = chr($index);
 
 
-      $e = substr(sprintf("%06d", $this->easting), 1, 3);
-      $n = substr(sprintf("%06d", $this->northing), 1, 3);
+      $e = substr(sprintf("%06d", $this->easting), 1, $digits/2);
+      $n = substr(sprintf("%06d", $this->northing), 1, $digits/2);
       
       return $firstLetter . $secondLetter . $e . $n;
     }
