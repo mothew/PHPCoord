@@ -30,6 +30,13 @@
   // Fixes and additions
   //
   // (c) 2014 Matthew Shepherd
+  //
+  // 3.0 - 28 Nov 2014
+  //  - toSixFigureString() now uses string manipulation to truncate the
+  //    eastings and northings of grid references from 5 figures downwards.
+  //  - toSixFigureString() has been renamed to
+  //    toOSNationalGridReferenceString() and now takes the number of
+  //    required digits as a parameter.
   // 
   // 2.4 - 18 Nov 2014
   //  - For the 2 instances where floor() had been changed to round() in 2.3,

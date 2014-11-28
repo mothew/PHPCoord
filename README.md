@@ -35,6 +35,10 @@ Created on 11-Aug-2005
 
 Forked on 18-Nov-2014 by Matthew Shepherd
 
+###3.0 - 28 Nov 2014
+- Conversion to six figures in toSixFigureString() is now a string operation for moderate performace gains.
+- toSixFigureString() has now been renamed toOSNationalGridReference() and takes the number of required digits as a parameter.
+
 ###2.4 - 18 Nov 2014
 
 - Rolled back 2.3 edits that changed floor() to round(). This gave inaccurate results if the 2nd from last digit in the northings or eastings was 5 or greater.
